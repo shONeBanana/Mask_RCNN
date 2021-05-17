@@ -7,7 +7,7 @@
 ](https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5)   
 2. 將 `Mask_RCNN-master` 和 `cocoapi-master` 個別解壓縮
 3. 進入 `Mask_RCNN-master` 目錄，準備好虛擬環境，執行 `pip install -r requirments_fix.txt`。   
-※如果要GPU版則改成tensorflow-gpu，CUDA 10
+※如果要GPU版則改成tensorflow-gpu==1.14.0，CUDA 10
 4. 進入 `cocoapi-master\PythonAPI`， 用文字編輯器打開 `setup.py`，將 12 行改成 `extra_compile_args=[],` ，並執行 `python setup.py install`
 5. 將 `mask_rcnn_coco.h5` 放置 `Mask_RCNN-master` 目錄底下，並移動至該目錄，後續執行程式碼皆在此目錄，完成安裝。
 
