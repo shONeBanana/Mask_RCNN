@@ -30,7 +30,7 @@ imgaug
  
 ## 新增檔案
 * demo.py: 利用預訓練模型測試coco資料集
-* demo_train_cat.py: 訓練 coco2014 貓資料集，請將資料集放在dataset底下並保持以下資料結構:  
+* demo_train_cat.py: 訓練 coco2014 貓資料集，請將資料集放在dataset底下並保持以下資料結構:   
 dataset   
 　　|-coco2014   
 　　　　|-test   
@@ -39,6 +39,7 @@ dataset
 其中 train 和 val 須包含相同檔名之 .jpg 和 .json 檔案 (如需其他影像檔格式需自行修改code)  
 其中 test 僅包含 .jpg 檔案 (如需其他影像檔格式需自行修改code)   
 .json檔 利用 labelme 標記後即可生成  
+※資料集可從上次上課的GoogleDrive下載，檔名 `coco2014_貓資料集少數_maskrcnn用.zip`
 * demo_test_cat.py: 測試 coco2014 貓資料集，留意模型路徑
 * demo_shape_dataset.py: 修改自[matterport/Mask_RCNN/samples/shapes](https://github.com/matterport/Mask_RCNN/tree/master/samples/shapes)，
 因為不用額外下載影像資料庫，可用於測試環境和maskrcc API是否正常
